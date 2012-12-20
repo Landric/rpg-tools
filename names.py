@@ -3,19 +3,22 @@ import pickle
 
 def reset_names():
     names = {
-            'part1':
+            'syl1':
             [
-                'Ae',
-                'Di',
-                'Mo',
-                'Fam',
+                "Ae", "Ar", "Av", "Dhal", "Di", "Fam", "Feld", "Fin", "Gor",
+                "Hodr", "Leth", "Lork", "Med", "Mer", "Mo", "Mun", "Mung",
+                "Naak", "Nil", "Nom", "Ol", "Op", "Or", "Orc", "Oth", "Pic",
+                "Pok", "Praz", "Rot", "Shas", "Sod", "Sul", "Tas", "Tod",
+                "Tor", "Vaz", "Vec", "Xer",
             ],
-            'part2':
+            'syl2':
             [
-                'dar',
-                'kil',
-                'glar',
-                'tres',
+                "", "'athi", "'onnor", "-Nad", "-Vec", "-Zol", "a", "a'a",
+                "aa", "ari", "dar", "dhal", "dor", "dros", "edra", "emon",
+                "glar", "i", "i'i", "idora", "innus", "ippe", "ippus", "ir",
+                "ket", "ki", "kil", "mo", "mol", "naki", "o", "oggoth", "ol",
+                "onor", "os", "osal", "oth", "oz", "rog", "tag", "thoth",
+                "toroth", "tres", "trus", "udr", "ul",
             ],
         }
 
@@ -71,7 +74,7 @@ def load_titles():
 
 def gen_name(race = None):
     names = load_names()
-    return "{0}{1}".format(choice(names['part1']), choice(names['part2']))
+    return "{0}{1}".format(choice(names['syl1']), choice(names['syl2']))
 
 def gen_title():
     titles = load_titles()
