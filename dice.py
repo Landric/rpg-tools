@@ -36,5 +36,6 @@ def roll(dice_string):
         
         total = sum(results)+modifier
         
-        print "Rolled {0} ({1})".format(total, ', '.join(map(str, results)))
+        print "Rolled {0})".format(', '.join(map(str, results)))
+        print, "Total: "
         return total
