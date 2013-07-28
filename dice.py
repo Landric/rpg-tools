@@ -27,7 +27,7 @@ def roll(dice_string):
     
     if dice == 1:
         result = randint(1, sides) + modifier
-        print "Rolled {0}".format(result)
+        print, "Rolled: "
         return result
     else:
         results = []
